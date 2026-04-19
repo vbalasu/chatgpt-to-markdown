@@ -4,6 +4,23 @@ A Claude Code skill that converts ChatGPT share links into clean Markdown docume
 
 ## Usage
 
+### Standalone (no Claude Code needed)
+
+```bash
+# Pass URL as argument
+python convert.py https://chatgpt.com/share/<id>
+
+# Specify output filename
+python convert.py https://chatgpt.com/share/<id> output.md
+
+# Interactive — prompts for URL
+python convert.py
+```
+
+The output filename is auto-generated from the conversation title (e.g., `join-types-in-sql.md`).
+
+### As a Claude Code skill
+
 ```bash
 /chatgpt-to-markdown https://chatgpt.com/share/<id>
 ```
